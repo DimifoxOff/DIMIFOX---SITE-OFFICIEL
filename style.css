@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #f1d9bc;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #B0A69D;
+    background-color: #B0A69D;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav .onglets a:hover {
+    border-bottom: 2px solid #717171;
+    color: #717171;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Inverse FD Dimifox.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header h4 {
+    margin: 10px 0 30px 0;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+header button {
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    margin-bottom: 30px;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header button:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+header button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Bestsellers Section */
+.main {
+    margin: 60px 0;
+    padding: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.section-title p {
+    font-size: 20px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bestseller-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bestseller-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.bestseller-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.watch-image {
+    height: 280px;
+    overflow: hidden;
+}
+
+.watch-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.bestseller-card:hover .watch-image img {
+    transform: scale(1.05);
+}
+
+.watch-info {
+    padding: 25px;
+}
+
+.watch-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.watch-info .price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #717171;
+    margin: 0 0 15px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.watch-info .description {
+    color: #666;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.view-product {
+    background-color: #333;
+    color: #fff;f
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.view-product:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.view-product a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* About Section */
+.about-section {
+    margin: 80px 0;
+    padding: 0 40px;
+}
+
+.about-section .content .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-section .content .card .left {
+    flex: 0 0 50%;
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+}
+
+.about-section .content .card .left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 0 0 20px 0;
+}
+
+.about-section .content .card .left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-section .content .card .right {
+    flex: 0 0 50%;
+}
+
+.about-section .content .card .right img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    border-top: 5px solid #6f6f6f;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 40px;
+}
+
+footer h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+footer .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+footer .services .service {
+    margin-right: 0;
+}
+
+footer .services .service h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer .services .service p {
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Social Service Specific Styling */
+.social-service h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px !important;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+footer #contact {
+    color: rgb(181, 181, 181);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    nav h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    header {
+        padding: 60px 20px;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+    
+    header h4 {
+        font-size: 18px;
+    }
+    
+    .main {
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 32px;
+    }
+    
+    .bestseller-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-section {
+        padding: 0 20px;
+    }
+    
+    .about-section .content .card {
+        flex-direction: column;
+    }
+    
+    .about-section .content .card .left,
+    .about-section .content .card .right {
+        flex: none;
+    }
+    
+    .about-section .content .card .right img {
+        height: 250px;
+    }
+    
+    footer {
+        padding: 40px 20px;
+    }
+    
+    footer .services {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bestseller-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .bestseller-card {
+        margin: 0 10px;
+    }
+    
+    header h1 {
+        font-size: 32px;
+    }
+    
+    .section-title h2 {
+        font-size: 28px;
+    }
+}

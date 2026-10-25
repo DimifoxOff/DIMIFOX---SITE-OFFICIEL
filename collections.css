@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', sans-serif;
+    background-color: #f1d9bc;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #B0A69D;
+    background-color: #B0A69D;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav h1 {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+}
+
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .onglets a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 20px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav .onglets a:hover {
+    border-bottom: 2px solid #717171;
+    color: #717171;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Inverse FD Dimifox.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    margin: 15px 0 0 0;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Collections Intro */
+.collections-intro {
+    background-color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Collections Grid */
+.main {
+    padding: 60px 40px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.collection-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.collection-card.featured {
+    grid-column: span 2;
+}
+
+.collection-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.collection-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.collection-card:hover .collection-image img {
+    transform: scale(1.05);
+}
+
+.collection-info {
+    padding: 30px;
+}
+
+.collection-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.collection-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #717171;
+    margin: 0 0 15px 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.collection-description {
+    color: #666;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.collection-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.feature {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.view-collection {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.view-collection:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+.view-collection a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Why Choose Section */
+.why-choose {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 40px;
+}
+
+.why-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.reason h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.reason p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    margin-top: 0;
+    border-top: 5px solid #6f6f6f;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 40px;
+}
+
+footer h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    border-bottom: 2px solid white;
+    width: fit-content;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+footer .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+footer .services .service h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer .services .service p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.social-service h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px !important;
+    margin-bottom: 10px;
+    color: #ccc;
+    font-weight: normal;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+footer #contact {
+    color: rgb(181, 181, 181);
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-top: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    nav h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    header {
+        padding: 60px 20px;
+    }
+    
+    header h1 {
+        font-size: 40px;
+    }
+    
+    .collections-intro {
+        padding: 40px 20px;
+    }
+    
+    .intro-content h2 {
+        font-size: 28px;
+    }
+    
+    .main {
+        padding: 40px 20px;
+    }
+    
+    .collections-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .collection-card.featured {
+        grid-column: span 1;
+    }
+    
+    .why-choose {
+        padding: 60px 20px;
+    }
+    
+    .why-content h2 {
+        font-size: 32px;
+    }
+    
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    footer {
+        padding: 40px 20px;
+    }
+    
+    footer .services {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .collection-card {
+        margin: 0 10px;
+    }
+    
+    header h1 {
+        font-size: 32px;
+    }
+    
+    .intro-content h2 {
+        font-size: 24px;
+    }
+}
